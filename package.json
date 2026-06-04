@@ -1,0 +1,62 @@
+{
+  "name": "xr-design",
+  "version": "1.0.0",
+  "description": "基于 Svelte 的 WEB 桌面端组件库",
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "xr",
+    "design",
+    "xrd",
+    "svelteComponent",
+    "component",
+    "components",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/NathanCong/xr-design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanCong/xr-design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanCong/xr-design/issues"
+  },
+  "main": "dist/cjs/main.js",
+  "types": "dist/esm/main.d.ts",
+  "module": "dist/esm/main.js",
+  "unpkg": "dist/umd/xrd.min.js",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "site/*",
+    "*.svelte",
+    "*.md",
+    "dist/umd/*",
+    "*.css"
+  ],
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "scripts": {
+    "serve": "vite serve",
+    "build:cjs": "vite build --mode cjs",
+    "build:esm": "vite build --mode esm",
+    "build:umd": "vite build --mode umd",
+    "build": "pnpm run build:cjs && pnpm run build:esm && pnpm run build:umd",
+    "check": "eslint --ext .ts,.svelte src",
+    "check:fix": "eslint --ext .ts,.svelte src --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}
