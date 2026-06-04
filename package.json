@@ -52,7 +52,9 @@
     "build:cjs": "vite build --mode cjs",
     "build:esm": "vite build --mode esm",
     "build:umd": "vite build --mode umd",
-    "build": "pnpm run build:cjs && pnpm run build:esm && pnpm run build:umd",
+    "build:dist": "pnpm run build:cjs && pnpm run build:esm && pnpm run build:umd",
+    "build:site": "vite build --mode site",
+    "build:all": "pnpm run build:dist && pnpm run build:site",
     "check": "eslint --ext .ts,.svelte src",
     "check:fix": "eslint --ext .ts,.svelte src --fix"
   },
