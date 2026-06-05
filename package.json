@@ -25,7 +25,7 @@
     "url": "https://github.com/NathanCong/xr-design/issues"
   },
   "main": "dist/cjs/main.js",
-  "types": "dist/esm/main.d.ts",
+  "types": "dist/types/main.d.ts",
   "module": "dist/esm/main.js",
   "unpkg": "dist/umd/xrd.min.js",
   "files": [
@@ -59,6 +59,12 @@
     "check:fix": "eslint --ext .ts,.svelte src --fix"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "less": "^4.6.4",
+    "svelte": "^5.56.2",
     "vite": "^8.0.16"
+  },
+  "peerDependencies": {
+    "svelte": "^5.56.2"
   }
 }
