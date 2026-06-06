@@ -64,6 +64,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@eslint/js": "^10.0.1",
     "@iconify/svelte": "^5.2.1",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
