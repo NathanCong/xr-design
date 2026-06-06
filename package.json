@@ -59,6 +59,9 @@
     "check": "eslint src",
     "check:fix": "eslint src --fix"
   },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",

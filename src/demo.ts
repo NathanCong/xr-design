@@ -1,3 +1,4 @@
+import 'normalize.css'
 import Demo from '@/Demo.svelte'
 import { mount } from 'svelte'
 

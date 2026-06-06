@@ -10,6 +10,10 @@ overrides:
 importers:
 
   .:
+    dependencies:
+      normalize.css:
+        specifier: ^8.0.1
+        version: 8.0.1
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -768,6 +772,9 @@ packages:
     resolution: {integrity: sha512-jaQyPKKk2YokHrEg+vFDYxXIHTCBgiZwSHOoVx/8V3GIBS8/VN6NdVRmg8q1ERtPkMvmOvebsgga4sAj5hls/w==}
     engines: {node: '>= 4.4.x'}
     hasBin: true
+
+  normalize.css@8.0.1:
+    resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
 
   obug@2.1.2:
     resolution: {integrity: sha512-AWGB9WFcRXOQs48Z/udjI5ZcZMHXwX8XPByNpOydgcGsDLIzjGizhoMWJyKAWze7AVW/2W1i+/gPX4YtKe5cyg==}
@@ -1680,6 +1687,8 @@ snapshots:
       iconv-lite: 0.6.3
       sax: 1.6.0
     optional: true
+
+  normalize.css@8.0.1: {}
 
   obug@2.1.2: {}
 
