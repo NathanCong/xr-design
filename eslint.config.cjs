@@ -9,13 +9,13 @@ const prettierPlugin = require('eslint-plugin-prettier');
 
 module.exports = [
   /**
-   * 全局忽略文件
+   * ESlint 忽略配置
    */
   {
     ignores: ['dist/**', 'node_modules/**', 'site/**'],
   },
   /**
-   * 共享：类型感知 lint 所需的 parserOptions
+   * ESlint 共享配置
    */
   {
     files: ['**/*.ts', '**/*.svelte'],
@@ -31,7 +31,7 @@ module.exports = [
     },
   },
   /**
-   * TypeScript：ESLint recommended + TS type-checked
+   * ESlint TypeScript 检测配置（ESLint recommended + TS type-checked）
    */
   jsEslintConfigs.recommended,
   ...tsEslintConfigs.recommendedTypeChecked,
@@ -43,7 +43,7 @@ module.exports = [
     },
   },
   /**
-   * Svelte
+   * ESlint Svelte 检测配置
    */
   ...svelteEslintConfigs['flat/recommended'],
   {
@@ -53,12 +53,9 @@ module.exports = [
     },
   },
   /**
-   * 关闭与 Prettier 冲突的 ESLint 规则（必须在 prettier 规则之前）
+   * ESlint Prettier 检测配置（关闭与 Prettier 冲突的 ESLint 规则，必须在 prettier 规则之前）
    */
   eslintConfigPrettier,
-  /**
-   * 用 ESLint 跑 Prettier
-   */
   {
     files: ['**/*.ts', '**/*.svelte'],
     plugins: { prettier: prettierPlugin },
